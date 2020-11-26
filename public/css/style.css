@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0px;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.to-top{
+    background: #ddd;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    border-radius: 50%;
+    display: flex;
+    border: 1px solid  azure;
+    align-content: center;
+    justify-content: center;
+    font-size: 32px;
+    color:#2894ff;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 0.8;
+}
+
+.to-top.active:hover{
+    background: white;
+    opacity: 1;
+    border: none;
+}
+.containerz{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.service-container{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+#contact{
+    text-align: center;
+    color: darkgray;
+}
+
+#main-spread{
+    width: 100%;
+    background-color: darkcyan;
+}
+.containerz2{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.containerz2{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#subscribe{
+    width: 100%;
+    background-color: white;
+    margin:  0 auto;
+}
+
+#subscribe form{
+    width: 60%;
+    margin: 45px;
+}
+h5{
+    color: black;
+    margin-bottom: -20px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.button_1{
+    height: 38PX;
+    background: goldenrod;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.button_1:hover{
+    cursor: pointer;
+    box-shadow:0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.dark{
+    padding:15px;
+    background: #35424a;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+
+}
+#banner-area{
+    width: 100%;
+    height: 500px;
+    position: fixed;
+    top: 100px;
+    background-color: #000;
+    background-image: url(/img/SoftwareDev.jpg);
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+#banner-area h2{
+    padding-top: 19%;
+    padding-left: 18%;
+    font-size: 40px;
+    font-family: poppins;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#newsletter{
+    height: 300px;
+}
+#newsletter2 h4{
+    float: right;
+    color: white;
+}
+
+#newsletter2 form{
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter2 label, input{
+   color: white;
+}
+
+
+/* Header */
+header{
+    background: #35424a;
+    color: white;
+    padding-top: 10px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+    position: fixed;
+    transition: 0.6s;
+    width: 100%;
+    z-index: 100000;
+}
+
+
+
+header.sticky {
+    opacity: 0.8;
+
+}
+
+header.sticky  li a .current{
+    color: white;
+} 
+
+
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    display: inline;
+    width: 40%;
+    margin-top: 10px;
+    background: #35424a;
+}
+
+header .highlight, header .current a{
+    color: goldenrod;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+/* showcase */
+#showcase{
+    /* min-height: 1000px; */
+    text-align: center;
+    color: white;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+#newsletter{
+    background: white;
+    height: 100%;
+}
+
+#page{
+display: block;
+padding-left: 200px;
+}
+
+#page h1{
+    color:goldenrod;
+    font-weight: bold;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+}
+
+form input, label{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+    color: white;
+}
+
+form textarea{
+    color: white;
+}
+
+/* boxes */
+#boxes{
+    margin-top: 20px;
+}
+#boxes .box{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+#boxex .box img{
+    width:90px;
+}
+
+/* Sidebar */
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: -10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width: 90%;
+    padding: 5px;
+    color: white;
+}
+
+aside h3{
+    text-align: center;
+}
+
+article#main-col{
+    float: left;
+    width: 65%;
+    margin:0 auto;
+    padding-left:200px;
+    color: white;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#main-col2 h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 4px;
+    padding-top: 30px;
+    font-size: 40px;
+    margin: 0;
+}
+
+/* Services */
+ul#services li{
+    list-style: none;
+    padding:20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #35424a;;
+}
+
+
+.back-text{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: goldenrod;
+    font-size: 14px;
+}
+
+.clearance{
+    height: 75px;
+    width: 100%;
+}
+
+#clearance{
+    height: 500px;
+}
+.content-area{
+    width: 100%;
+    position: relative;
+    top: 100px;
+    background: white;
+    height: 900px;
+}
+/* About */
+
+
+.content-area h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 4px;
+    padding-top: 30px;
+    font-size: 40px;
+    margin: 0;
+}
+
+.content-area p{
+    padding: 2% 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+    line-height: 30px;
+}
+
+.social-media{
+    margin: 0;
+    padding: 0;
+    height: 30px;
+}
+.social-media ul{
+    /* position: absolute; */
+    /* transform: translate(10%, 10%); */
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-media ul li{
+    list-style: none;
+}
+
+.social-media ul li a{
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 60px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: 0.5s;
+}
+
+.social-media ul li a:hover{
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+
+}
+
+.social-media ul li a .fa{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background:  linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size: 24px;
+    color: #262626;
+    transition: 0.5s;
+}
+
+.social-media ul li:nth-child(1) a:hover .fa{
+    color: #00aced;
+}
+
+.social-media ul li:nth-child(2) a:hover .fa{
+    color: #3b5998;
+}
+
+.social-media ul li:nth-child(3) a:hover .fa{
+    color: #bc2a8d;
+}
+
+.social-media ul li:nth-child(4) a:hover .fa{
+    color: #007bb6;
+}
+
+.social-media ul li:nth-child(5) a:hover .fa{
+    color: #25d366;
+}
+
+footer#index{
+    padding:5px;
+    margin-top: 20px;
+    color: white;
+    background-color: goldenrod;
+    text-align: center;
+}
+
+
+footer#service{
+    padding:5px;
+    margin-top: 20px;
+    color: white;
+    background-color: goldenrod;
+    text-align: center;
+}
+
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150vh;
+    background: #111;
+}
+
+
+.testimonial{
+    position: relative;
+    max-width: 100%;
+    -webkit-box-reflect: below 1px linear-gradient(transparent 70%, #0009);
+}
+
+.swiper-slide {
+background-position: center;
+background-size: cover;
+width: 320px;
+min-height: 350px;
+margin: 0 60px;
+background: #fff;
+}
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-left{
+    background-image: none;
+}
+
+.testimonial .card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: #333;
+    padding: 60px 40px;
+    text-align: center;
+    overflow:hidden;
+}
+
+.testimonial .card .layer{
+    position: absolute;
+    top: calc(100% - 2px);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#03a9f4, #e91ee3);
+    /* z-index: 1; */
+    transition: 0.5s;
+}
+
+.testimonial .card:hover .layer{
+    top: 0;
+}
+
+.testimonial .card .content{
+    position: relative;
+    /* z-index: 2; */
+}
+
+.testimonial .card .content p{
+   font-size: 18px;
+   line-height: 24px;
+   margin-bottom: 10px;
+   color: #fff;
+}
+
+.testimonial .card .content .imgBx{
+    width: 55%;
+    height: 100%;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.testimonial .card .content h2{
+    font-size: 18px;
+    color: #fff;
+}
+
+.testimonial .card .content h2 span{
+    color: #03a9f4;
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+.testimonial .card:hover .content h2 span{
+    color: #fff;
+}
+
+
+footer#about{
+    color: white;
+    background-color: goldenrod;
+    text-align: center;
+}
+
+#error{
+    height: 83vh;
+    padding-top: 150px;
+}
+
+.success{
+    height: 65.5vh;
+}
+.success p{
+    margin: 20px auto;
+    padding: 20px auto;
+    font-size: 30px;
+    font-weight: bold;
+    color: darkgray;
+}
+
+.success h3, span{
+    font-size: 30px;
+    font-weight: bold;
+    color: darkcyan;
+}
+
+.form input{
+    color: black;
+}
+
+/* Media Querries */
+    @media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box{
+        float: none;
+        text-align: center;
+        width: 100%;
+        padding-left:0;
+        padding-right:0;
+        margin: auto 0;
+    }
+    header .highlight{
+        padding: 110px;
+    }
+    
+    aside#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+        padding-left:10px;
+        margin: auto;
+    }
+    article#main-col{
+        float: none;
+        text-align: center;
+        width: 100%;
+        padding-left:10px;
+        padding-right:20px;
+        margin: auto;
+    }
+
+    header{
+        padding-bottom: 20px;
+        margin: 0 auto;
+    }
+
+    #showcase h1{
+        margin-top: 40px;
+    }
+
+    #newsletter button, .quote button{
+        display: block;
+        width:100%;
+    }
+
+    #newsletter form input, .quote input, .quote textarea{
+        width: 100%;
+        /* margin-left: 10px;
+        padding-left: 10px; */
+        margin-bottom: 5px;
+
+    }
+    .back-text{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: goldenrod;
+        font-size: 24px;
+    }
+    .clearance{
+        height: 180px;
+    }
+
+}
