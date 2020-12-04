@@ -120,8 +120,22 @@ ul{
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 20px;
-
 }
+
+.dark h4{
+    color: goldenrod;
+}
+
+#float{
+    color: white;
+    padding: 50px;
+    align-items: center;
+}
+
+#float h5{
+    color: white;
+}
+
 #banner-area{
     width: 100%;
     height: 500px;
@@ -143,6 +157,9 @@ ul{
     color: #fff;
 }
 
+.wrapper p, #main-col2 p{
+    font-size: 22px;
+}
 #newsletter{
     height: 300px;
 }
@@ -215,9 +232,15 @@ header nav{
     background: #35424a;
 }
 
-header .highlight, header .current a{
+header .current a{
     color: goldenrod;
     font-weight: bold;
+}
+
+header .highlight{
+    color: goldenrod;
+    font-weight: bold;
+    font-size: 28px;
 }
 
 header a:hover{
@@ -341,8 +364,9 @@ ul#services li{
 
 .back-text{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: goldenrod;
-    font-size: 14px;
+    color: teal;
+    font-size: 16px;
+    line-height: 18px;`
 }
 
 .clearance{
@@ -358,11 +382,10 @@ ul#services li{
     position: relative;
     top: 100px;
     background: white;
-    height: 900px;
+    height: 1300px;
 }
+
 /* About */
-
-
 .content-area h2{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     letter-spacing: 4px;
@@ -383,8 +406,6 @@ ul#services li{
     height: 30px;
 }
 .social-media ul{
-    /* position: absolute; */
-    /* transform: translate(10%, 10%); */
     display: flex;
     justify-content: space-around;
 }
@@ -458,11 +479,16 @@ footer#index{
 
 
 footer#service{
-    padding:5px;
-    margin-top: 20px;
-    color: white;
     background-color: goldenrod;
-    text-align: center;
+}
+
+footer#service .footer-copyright{ 
+    font-weight: 700;
+}
+
+footer#service .sep{
+    height: 30px;
+
 }
 
 .body{
@@ -515,7 +541,6 @@ background: #fff;
     width: 100%;
     height: 100%;
     background: linear-gradient(#03a9f4, #e91ee3);
-    /* z-index: 1; */
     transition: 0.5s;
 }
 
@@ -525,7 +550,6 @@ background: #fff;
 
 .testimonial .card .content{
     position: relative;
-    /* z-index: 2; */
 }
 
 .testimonial .card .content p{
@@ -567,6 +591,11 @@ footer#about{
     text-align: center;
 }
 
+footer#gallery{
+    color: white;
+    background-color: goldenrod;
+}
+
 #error{
     height: 83vh;
     padding-top: 150px;
@@ -583,11 +612,27 @@ footer#about{
     color: darkgray;
 }
 
-.success h3, span{
+.success h3, .success span{
     font-size: 30px;
     font-weight: bold;
     color: darkcyan;
 }
+
+.collapsible-body h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: darkcyan;
+}
+
+.collapsible-body p{
+    font-size: 20px;
+    color: rgb(67, 68, 71);
+}
+
+#services li h5{
+    color: white;
+}
+
 
 .form input{
     color: black;
@@ -644,8 +689,6 @@ footer#about{
 
     #newsletter form input, .quote input, .quote textarea{
         width: 100%;
-        /* margin-left: 10px;
-        padding-left: 10px; */
         margin-bottom: 5px;
 
     }
