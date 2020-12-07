@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen, projection" />
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen, projection"/>
 
     <link rel="stylesheet" href="/css/style.css"/>
 </head>
@@ -30,13 +30,20 @@
                 </h1>
             </div>
             <nav>
-                <ul>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
                     <li><a href="/">Home</a></li>  
                     <li><a href="about">About</a></li>  
                     <li><a href="services">services</a></li>  
                     <li class="current"><a href="gallery">Gallery</a></li>  
                 </ul>
             </nav>
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="/">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="services">Services</a></li>
+                <li class="current"><a href="gallery">Gallery</a></li>
+            </ul>
         </div>
     </header>
     
@@ -192,7 +199,8 @@
     </script>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/skyit.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/skyit.js"></script>
     
 </body>
 </html>

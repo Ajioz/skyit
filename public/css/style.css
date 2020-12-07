@@ -250,7 +250,6 @@ header a:hover{
 
 /* showcase */
 #showcase{
-    /* min-height: 1000px; */
     text-align: center;
     color: white;
 }
@@ -469,28 +468,6 @@ ul#services li{
     color: #25d366;
 }
 
-footer#index{
-    padding:5px;
-    margin-top: 20px;
-    color: white;
-    background-color: goldenrod;
-    text-align: center;
-}
-
-
-footer#service{
-    background-color: goldenrod;
-}
-
-footer#service .footer-copyright{ 
-    font-weight: 700;
-}
-
-footer#service .sep{
-    height: 30px;
-
-}
-
 .body{
     margin: 0;
     padding: 0;
@@ -584,18 +561,6 @@ background: #fff;
     color: #fff;
 }
 
-
-footer#about{
-    color: white;
-    background-color: goldenrod;
-    text-align: center;
-}
-
-footer#gallery{
-    color: white;
-    background-color: goldenrod;
-}
-
 #error{
     height: 83vh;
     padding-top: 150px;
@@ -649,12 +614,15 @@ footer#gallery{
         float: none;
         text-align: center;
         width: 100%;
-        padding-left:0;
-        padding-right:0;
+        padding: -50px auto;
         margin: auto 0;
+        height: 0vh;
+    }
+    .btn{
+        margin: -20px auto;
     }
     header .highlight{
-        padding: 110px;
+        padding: 10px;
     }
     
     aside#sidebar{

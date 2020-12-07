@@ -3,6 +3,7 @@ $(document).ready(function(){
   $('.carousel').carousel();
   $('.collapsible').collapsible();
   $('.scrollspy').scrollSpy();
+  $('.sidenav').sidenav();
  });
 
  window.addEventListener("scroll", function(){
