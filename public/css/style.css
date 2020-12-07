@@ -621,6 +621,9 @@ background: #fff;
     .btn{
         margin: -20px auto;
     }
+    .foot-sep{
+       height: 30px;
+    }
     header .highlight{
         padding: 10px;
     }
